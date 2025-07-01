@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Project 1 - Beauty Standards</title>
+        <link rel="stylesheet" href="../css/finalProject-css/styles.css">
+        
+        <style>
+            body {
+                display: grid;
+                grid-template-columns: 2fr 1fr;
+                grid-template-rows: auto 1fr auto;
+                gap: 20px;
+                grid-template-areas:
+                    "header nav"
+                    "main main"
+                    "footer footer";
+            }
+            
+            header {
+                grid-area: header;
+                background-color: #d9c2b0;
+                border-radius: 10px;
+                text-align: center;
+                padding: 15px;
+            }
+
+            nav {
+                grid-area: nav;
+                background-color: #e8d4c3;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+            }
+
+            nav a {
+                background-color: #f2e9e1;
+                border-radius: 8px;
+                padding: 10px;
+                text-decoration: none;
+                color: #3d3d3d;
+                display: block;
+                text-align: center;
+                font-weight: bold;
+                border: 2px solid #d9c2b0;
+                transition: background-color 0.3s ease, border-color 0.3s ease;
+            }
+
+            nav a:hover {
+                background-color: #d9c2b0;
+            }
+
+            main {
+                grid-area: main;
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+                align-items: center;
+                padding: 20px;
+            }
+
+            .thumbnails {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                gap: 20px;
+            }
+
+            .thumbnails img {
+                width: 100%;
+                height: auto;
+                border-radius: 5px;
+                border: 2px solid transparent;
+                cursor: pointer;
+            }
+
+            .thumbnails img:hover {
+                border-color: #d9c2b0;
+            }
+
+            footer {
+                grid-area: footer;
+                background-color: #c5a89e;
+                border-radius: 10px;
+                text-align: center;
+                padding: 15px;
+                color: #3d3d3d;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Project 1 - Beauty Standards</h1>
+        </header>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="project1.html">Project 1</a>
+            <a href="project2.html">Project 2</a>
+        </nav>
+
+        <main>
+            <div class="thumbnails">
+                <img 
+                    src="images/paleSkin-1440.jpg" 
+                    alt="Pale Skin"
+                    width="1000" 
+                    height="auto"
+                    srcset="
+                        images/paleSkin-768.jpg 1x,
+                        images/paleSkin-960.jpg 2x,
+                        images/paleSkin-1440.jpg 3x
+                    ">
+                <img 
+                    src="images/smallWaist-1440.jpg" 
+                    alt="Small Waist"
+                    width="1000" 
+                    height="auto"
+                    srcset="
+                        images/smallWaist-768.jpg 1x,
+                        images/smallWaist-960.jpg 2x,
+                        images/smallWaist-1440.jpg 3x
+                    ">
+                <img 
+                    src="images/shoulder-1440.jpg" 
+                    alt="Shoulder Line"
+                    width="1000" 
+                    height="auto"
+                    srcset="
+                        images/shoulder-768.jpg 1x,
+                        images/shoulder-960.jpg 2x,
+                        images/shoulder-1440.jpg 3x
+                    ">
+            </div>
+        </main>
+
+        <footer>
+            <p>© 2025 Claire's Portfolio. All rights reserved.</p>
+        </footer>
+
+        <script src="script.js" defer></script>
+    </body>
+</html>

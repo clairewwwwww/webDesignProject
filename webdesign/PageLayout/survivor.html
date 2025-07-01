@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Identity V - Survivor</title>
+        <link rel="stylesheet" href="../css/pageLayout-css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+        <!--I searched online for the font-->
+        <style>
+            body{
+                background-color: #1d1d1d;
+                color: #e0d9cc;
+            }
+            p{
+                font-size: 10px;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: minmax(100px, 1fr) 2fr 2fr;
+                grid-template-rows: auto 2fr 2fr auto;
+                height: 100vh;
+                gap: 10px;
+                grid-template-areas:
+                "h h h"
+                "n1 m1 i1"
+                "n1 m2 i2"
+                "f f f";
+            }
+
+            @media (max-width: 768px){
+                .container{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-areas: 
+                    "h"
+                    "n1"
+                    "m1"
+                    "m2"
+                    "i1"
+                    "i2"
+                    "f";
+                }
+            }
+            
+            header{
+                background-color: #2a333a;
+                border-radius: 10px;
+                padding:10px;
+                text-align: center;
+            }
+            nav{
+                background-color: #3e4a5d;
+                border-radius: 10px;
+                padding:10px;
+                text-align: center;
+                
+            }
+
+            main{
+                background-color: black;
+                border-radius: 10px;
+                padding:10px;
+                text-align: center;
+            }
+            aside{
+                background-color: black;
+                border-radius: 10px;
+                padding:10px;
+            }
+            footer{
+                background-color: #21201e;
+                border-radius: 10px;
+                padding:10px;
+            }
+            #image1, #image2{
+                display: flex;
+                flex-direction: center;
+                align-items: center;
+                justify-content: center;
+
+            }
+            header{grid-area: h; }
+            #nav1{grid-area: n1; }
+            #main1{grid-area: m1; }
+            #main2{grid-area: m2; }
+            #image1{grid-area: i1; }
+            #image2{grid-area: i2; }
+            footer{grid-area: f; }
+
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 ><a href ="index.html">Identity V</a></h1>
+            </header>
+            
+            <nav id="nav1">
+                <a href="survivor.html">Survivor</a>
+                <p>I like playing survivor when my friends are also playing. First of all, I enjoying playing with friends more than just simply playing the game. 
+                    On the other hand, I am not alone.</p>
+                <p>I think working as a team is really important. Since this game does not have an in game voice chat, 
+                    the survivors need to communicate information with each other using the short text messages provided. 
+                    Being able to exchange information on-time is essential. For example, the location of the hunter, or the left over cipher machines that needs to be decoded. 
+                    The information might determine the outcome of the game.  </p>
+                <p>
+                    Sometimes my friends and I will call each other using the voice chat from other apps, which is really helpful in exchanging the information. 
+                </p>
+            </nav>
+
+            <main id="image1">
+                <img 
+                    src="images/littleGirl-1440.png" 
+                    alt="Identity V" 
+                    width="400" 
+                    height="auto" 
+                    srcset="images/littleGirl-480.png 1x, images/littleGirl-960.png 2x, images/littleGirl-1440.png 3x">
+            </main>
+
+            <main id="main1">
+               <h1> "Little Girl"
+               </h1>
+               <p>
+                "Little Girl" is my favorite survivor role. 
+                Although her abilities have been criticized by many users as useless, I still believe it is about how the players play the characters not about the characters themselves.
+               </p>
+               <p>
+                One of my favorite abilities of "Little Girl" is that she can teleport to a teammate from wherever she is at. 
+                In this case, a lot of time of runnning the map can be saved. 
+               </p>
+               <p>She has many cute skins but one of my favorite can no longer be purchased because it is limited time edition. Some people who bought her skins start to selling it for a really high price. 
+                This is also something that happened to other charcaters as well. I think this is a bad phenomenon. 
+               </p>
+            </main>
+
+            <main id="image2">
+                <img 
+                src="images/Mercenary-1440.png" 
+                alt="Identity V" 
+                width="400" 
+                height="auto" 
+                srcset="images/Mercenary-480.png 1x, images/Mercenary-960.png 2x, images/Mercenary-1440.png 3x">
+            </main>
+
+            <main id="main2">
+               <h2>
+                Mercenary
+               </h2>
+               <p>Another character that I want to introduce is Mercenary. He is a rescuer. Rescuers are the characters who have the ability to save the teammates when they are caught by the hunter. 
+                Although everyone characters can save their teammate from the chair (where the hunter placed the survivors that are caught), rescuers usually have their special abilities that will reduce the chance of them being caught by the hunter before saving their teammates. 
+            
+               </p>
+               <p>Rescuers are important in the team but at the same time they usually receive a lot of pressure. If the rescuer of the team did not save the teammate that is on the chair and got caught by the hunter, the survivor team will usually lose.</p>
+               <p>
+                I don't usually play the rescuer role but none of my friends play it either. So I will usually play it because no one else is willing to. At first I was really stress, because if I make a mistake then the whole team might lose, 
+                As for now, however, I start enjoying the rescuer role.  
+               </p>
+            </main>
+
+
+            <footer>
+                <p><a href="../index.html">Back to i6 Home Page</a></p>
+                <p><a href="https://emilydidthis.github.io/CSCI-UA.0004-Spring25/assignments/06.html">Instructions followed for creating this page</a></p>
+            </footer>
+
+        </div>
+    </body>
+
+</html>

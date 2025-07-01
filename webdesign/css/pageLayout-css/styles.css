@@ -1,0 +1,92 @@
+body {
+    background-color: #1d1d1d;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+ul, h1, h2, h3 ,h4{
+    font-family: 'Cinzel Decorative', cursive;
+    font-size: 20px;
+    text-align: center;
+}
+a{
+    font-family: 'Cinzel Decorative', cursive;
+}
+p{
+    font-family: Monaco, Monospace;
+    text-align:left;
+}
+
+a:link, a:visited {
+    color: white;
+    text-decoration: underline;
+}
+
+a:hover{
+    background-color: gray;
+    color: black;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+nav a:link{
+    color: #d4af37;
+}
+
+footer a:link{
+    color: darkred;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+@media (prefers-color-scheme: dark){
+    body {
+        background: #1d1d1d;
+        color: #e0d9cc;
+    }
+    header, nav, main, aside, footer{
+        background-color: #2a2a2a;
+        color: #e0d9cc;
+    }
+
+    a:link, a:visited{
+        color: #d4af37;
+    }
+
+    a:hover{
+        background-color: #444;
+        color: white;
+    }
+
+}
+
+/*I referred to a few Youtube videos and online info for reference */
+#menu{
+    display:none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 768px){
+   #menu{
+    display:block;
+   }
+   nav{
+    display: none;
+   }
+   nav.show{
+    display: block;
+   }
+
+
+}

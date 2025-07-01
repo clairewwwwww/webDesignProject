@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Identity V - Home</title>
+        <link rel="stylesheet" href="../css/pageLayout-css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+        <!--I searched online for the font-->
+        <style>
+            body{
+                background-color: #1d1d1d;
+                color: #e0d9cc;
+            }
+            p{
+                font-size: 10px;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: minmax(100px, 1fr) 2fr 2fr minmax(100px, 1fr);
+                grid-template-rows: auto 2fr 2fr auto;
+                height: 100vh;
+                gap: 10px;
+                grid-template-areas:
+                "h h h h"
+                "m i i s"
+                "m n1 n2 s"
+                "f f f f";
+            }
+            
+            @media (max-width: 768px){
+                .container{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-areas: 
+                    "h"
+                    "n1"
+                    "n2"
+                    "m"
+                    "i"
+                    "s"
+                    "f";
+                }
+            }
+            
+            header{
+                background-color: #2a333a;
+                border-radius: 10px;
+                padding:10px;
+                text-align: center;
+            }
+            nav{
+                background-color: #3e4a5d;
+                border-radius: 10px;
+                padding:10px;
+                text-align: center;
+                
+            }
+
+            main{
+                background-color: black;
+                border-radius: 10px;
+                padding:10px;
+                text-align: center;
+            }
+            aside{
+                background-color: black;
+                border-radius: 10px;
+                padding:10px;
+            }
+            footer{
+                background-color: #21201e;
+                border-radius: 10px;
+                padding:10px;
+            }
+            header{grid-area: h; }
+            #nav1{grid-area: n1; }
+            #nav2{grid-area: n2; }
+            #main1{grid-area: m; }
+            #image{grid-area: i; }
+            aside{grid-area: s; }
+            footer{grid-area: f; }
+
+            
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title"><a href ="index.html">Identity V</a></h1>
+                <button id="menu" aria-label="Menu">
+                    <svg width="30" height="30" viewBox="0 0 100 80">
+                        <rect width="100" height="10" fill="gray"></rect>
+                        <rect y="30" width="100" height="10" fill="gray"></rect>
+                        <rect y="60" width="100" height="10" fill="gray"></rect>
+                      </svg>
+                </button>
+
+            </header>
+
+            <nav id="nav1">
+                <a href="survivor.html">Survivor</a>
+                <p>I like playing survivor when my friends are also playing. First of all, I enjoying playing with friends more than just simply playing the game. 
+                    On the other hand, I am not alone.</p>
+            </nav>
+            <nav id="nav2">
+                <a href="hunter.html">Hunter</a>
+                <p>I used to play hunter a lot when my friends aren't playing with me. 
+                    However, I don't play ranking mode because I will be super upset if I lose 
+                    since I'm on a team by myself. 
+                </p>
+            </nav>
+
+            <main id="main1">
+                <h3>Personal Story</h3>
+                <p>Back in elementary school, my friend had recommended this game to me. I downloaded it but quit playing it because it was too scary. Later, as I entered middle school, some of my friends were also playing this game. So I decided to pick it back up because that was the time when I first moved to the US from China and I want to make more friends and try to fit in. 
+                    Therefore, although I wasn't a big gamer, I started to play this game with my friends. </p>
+                <h4>Everyday Tips</h4>
+                <p id="messages" style="text-align: center"></p>
+            </main>
+            <main id="image">
+                <img 
+                    src="images/Identity V-1440.png" 
+                    alt="Identity V" 
+                    width="400" 
+                    height="auto" 
+                    srcset="images/Identity V-480.png 1x, images/Identity V-960.png 2x, images/Identity V-1440.png 3x">
+            </main>
+
+            <aside>
+                <h2>
+                    Basic Info
+                </h2>
+                <p>Identity V is an asymmetrical game, which means the two teams have different number of characters. 
+                    In this game, specifically, it is 1v4 where there are one player that plays the Hunter, and the other four players play the Survivors. 
+                    The Survivors' goal is to escape, and they can do so by decoding cipher machines. The Hunter, who has different powerful abilities, will try to track and eliminate the Survivors before they escape. </p>
+                
+            </aside>
+
+
+            <footer>
+            <p><a href="../index.html">Back to i6 Home Page</a></p>
+            <p><a href="https://emilydidthis.github.io/CSCI-UA.0004-Spring25/assignments/06.html">Instructions followed for creating this page</a></p>
+            </footer>
+
+        </div>
+        <script src="script.js" defer>
+
+
+        </script>
+    </body>
+
+</html>

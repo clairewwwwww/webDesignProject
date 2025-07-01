@@ -1,0 +1,109 @@
+nav a {
+    background-color: #f2e9e1;
+    border-radius: 8px;
+    padding: 10px;
+    text-decoration: none;
+    color: #3d3d3d;
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border: 2px solid #d9c2b0;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+nav a:hover {
+    background-color: #d9c2b0;
+}
+
+
+@font-face {
+    font-family: 'PlayfairDisplay';
+    src: url('../fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-color: #f7f1e3;
+    color: #3d3d3d;
+    font-family: 'Playfair Display', serif;
+}
+
+header {
+    background-color: #d9c2b0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #3d3d3d;
+}
+nav {
+    background-color: #e8d4c3;
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    grid-area: nav;
+    align-self: start;
+    justify-self: center;
+    margin-top: 20px;
+}
+main {
+    background-color: #f2e9e1;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+footer {
+    background-color: #c5a89e;
+    border-radius: 10px;
+    padding: 10px;
+    text-align: center;
+    color: #3d3d3d;
+}
+
+header a {
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "header"
+            "nav"
+            "main"
+            "footer";
+    }
+    .thumbnails {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .thumbnails img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 1024px) {
+    .thumbnails {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: #2e2e2e;
+        color: #e0e0e0;
+    }
+    header, nav, footer {
+        background-color: #444444;
+    }
+    main {
+        background-color: #3a3a3a;
+    }
+}
+

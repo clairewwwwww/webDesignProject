@@ -1,0 +1,67 @@
+body {
+    background-color: lightpink;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+ul, h1, h2, h3, h4{
+    font-family: Copperplate, Fantasy;
+    font-size: 24px;
+}
+
+p{
+    font-family: Monaco, Monospace;
+}
+
+#credit{
+    font-size: 0.8em;
+    text-align: center;
+}
+
+a:link, a:visited {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover{
+    color: black;
+    background-color: pink;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+
+#container {
+    
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    padding:30px
+}
+.experience-block{
+    padding:30px;
+    border: 5px solid palevioletred;
+    text-align: center;
+}
+.experience-block img{
+    height: 50%;
+    width: 50%;
+}
+
+.table{
+    text-align: center;
+    background-color: rgb(255, 234, 253);
+    border: 10px solid rgb(230, 202, 226);
+    margin: auto;
+    font-family: Monaco, Monospace;
+
+}
+
+
+
+

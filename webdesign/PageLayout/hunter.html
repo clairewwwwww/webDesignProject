@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Identity V - Hunter</title>
+        <link rel="stylesheet" href="../css/pageLayout-css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+        <!--I searched online for the font-->
+        <style>
+            body{
+                background-color: #1d1d1d;
+                color: #e0d9cc;
+            }
+            p{
+                font-size: 10px;
+            }
+            .container{
+                display: grid;
+                grid-template-columns: minmax(100px, 1fr) 2fr 2fr;
+                grid-template-rows: auto 2fr 2fr auto;
+                height: 100vh;
+                gap: 10px;
+                grid-template-areas:
+                "h h h"
+                "n1 m1 i1"
+                "n1 m2 i2"
+                "f f f";
+            }
+
+            @media (max-width: 768px){
+                .container{
+                    display: grid;
+                    grid-template-columns: 1fr;
+                    grid-template-areas: 
+                    "h"
+                    "i1"
+                    "m1"
+                    "i2"
+                    "m2"
+                    "n1"
+                    "f";
+                }
+            }
+            
+            header{
+                background-color: #2a333a;
+                border-radius: 10px;
+                padding:10px;
+                text-align: center;
+            }
+            nav{
+                background-color: #3e4a5d;
+                border-radius: 10px;
+                padding:10px;
+                text-align: center;
+                
+            }
+
+            main{
+                background-color: black;
+                border-radius: 10px;
+                padding:10px;
+                text-align: center;
+            }
+            aside{
+                background-color: black;
+                border-radius: 10px;
+                padding:10px;
+            }
+            footer{
+                background-color: #21201e;
+                border-radius: 10px;
+                padding:10px;
+            }
+            #image1, #image2{
+                display: flex;
+                flex-direction: center;
+                align-items: center;
+                justify-content: center;
+
+            }
+            header{grid-area: h; }
+            #nav1{grid-area: n1; }
+            #main1{grid-area: m1; }
+            #main2{grid-area: m2; }
+            #image1{grid-area: i1; }
+            #image2{grid-area: i2; }
+            footer{grid-area: f; }
+
+           
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 ><a href ="index.html">Identity V</a></h1>
+            </header>
+            
+            <nav id="nav1">
+                <a href="hunter.html">Hunter</a>
+                <p>I used to play hunter a lot when my friends aren't playing with me. 
+                    However, I don't play ranking mode because I will be super upset if I lose 
+                    since I'm on a team by myself. </p>
+
+                <p>
+                    I used to play on the Chinese version of this game, but after China has the policy that children under 18 yrs old can not play any video games, I started playing on the US version. 
+                    It is interesting to see the matching time for hunters is different in there two version. In the Chinese one, more people tend to play hunters which makes the matching time super long. 
+                    Whereas in the US one, more people tend to play the survivors so it is easier to match a match for hunter. 
+                </p>
+            </nav>
+
+            <main id="image1">
+                <img 
+                    src="images/photographer-1440.png" 
+                    alt="Identity V" 
+                    width="400" 
+                    height="auto" 
+                    srcset="images/photographer-480.png 1x, images/photographer-960.png 2x, images/photographer-1440.png 3x">
+            </main>
+
+            <main id="main1">
+               <h1> Photographer</h1>
+               <p>This character is my favorite character of the entire game. I do photography so seeing a photographer in a game makes me feel connected. 
+                Also, I like his abilities. He can capture the survivors' current locations and create a correspond world in his camera. </p>
+                <p>However, he is not a chasing type of hunters so it is hard to chase the survivors. Instead, he can use his ability to teleport between the real world and the world in the camera. 
+                    So if you can guess where the survivors are located at in the real world, you can go to the same location in the camera world and change to the real world and hit the survivors.</p>
+            </main>
+
+            <main id="image2">
+                <img 
+                src="images/naiad-1440.png" 
+                alt="Identity V" 
+                width="400" 
+                height="auto" 
+                srcset="images/naiad-480.png 1x, images/naiad-960.png 2x, images/naiad-1440.png 3x">
+            </main>
+
+            <main id="main2">
+               <h2>
+                Naiad
+               </h2>
+               <p>
+                She is my second favorite hunter. Since the Photographer can not be played in the duo hunter mode due to his ability, I usually use Naiad when I'm playing the duo hunter mode with my friends. 
+                The duo hunters mode is when a match has two hunters against eight survivors. 
+               </p>
+               <p>
+                I like collabrating with my friend when I am using this character. However, when playing against eight survivors, the two hunters really need to work together. 
+                Sometimes my friend and I will go chase different survivors which will take a long time. So now we try to work together first, then go separately. 
+               </p>
+            </main>
+
+
+            <footer>
+                <p><a href="../index.html">Back to i6 Home Page</a></p>
+                <p><a href="https://emilydidthis.github.io/CSCI-UA.0004-Spring25/assignments/06.html">Instructions followed for creating this page</a></p>
+            </footer>
+
+        </div>
+    </body>
+
+</html>

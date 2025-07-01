@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Claire's Portfolio</title>
+        <link rel="stylesheet" href="../css/finalProject-css/styles.css">
+        <style>
+            
+            .container {
+                display: grid;
+                grid-template-columns: 1fr 2fr;
+                grid-template-rows: 0.8fr 2fr 0.2fr;
+                gap: 20px;                
+                height: 100vh;
+                grid-template-areas:
+                "header header"
+                "main nav"
+                "footer footer";
+            }
+            
+            
+            header {grid-area: header; }
+            nav {grid-area:nav;}
+            main {grid-area: main;}
+            footer {grid-area: footer;}
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <h1 id="title"><a href ="index.html">Claire's Portfolio</a></h1>
+            </header>
+
+            <nav>
+                <a href="project1.html">Project 1</a>
+                <a href="project2.html">Project 2</a>
+            </nav>
+
+            <main id="main1">
+                <h3>Welcome to My Portfolio!</h3>
+                <p>Explore my photography projects with me!</p>
+                <img 
+                src="images/me-960.jpg" 
+                alt="Me" 
+                class="profile-image"
+                srcset="
+                    images/me-768.jpg 1x,
+                    images/me-960.jpg 2x,
+                    images/me-1440.jpg 3x
+                "
+            >
+            
+            </main>
+            
+            <footer>
+                <p>© 2025 Claire's Portfolio. All rights reserved.</p>
+            </footer>
+        </div>
+    </body>
+</html>
